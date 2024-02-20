@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1a324c" />
+    <meta name="msapplication-navbutton-color" content="#1a324c" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta
+      name="description"
+      content="Omobolarinwa Quadri is a self-taught Front End Developer and a Graduate of Computer Science from Lagos, Nigeria."
+    />
+    <link rel="stylesheet" href="static/css/main.css" />
+    <link rel="stylesheet" href="static/css/index.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <!-- Google fonts -->
+    <style>
+      /* cyrillic-ext */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+
+      /* cyrillic */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+
+      /* greek-ext */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+1F00-1FFF;
+      }
+
+      /* greek */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0370-03FF;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* cyrillic-ext */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+
+      /* cyrillic */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+
+      /* greek-ext */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+1F00-1FFF;
+      }
+
+      /* greek */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0370-03FF;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* cyrillic-ext */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+
+      /* cyrillic */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+
+      /* greek-ext */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+1F00-1FFF;
+      }
+
+      /* greek */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0370-03FF;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* cyrillic-ext */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+
+      /* cyrillic */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+
+      /* greek-ext */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+1F00-1FFF;
+      }
+
+      /* greek */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0370-03FF;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* cyrillic-ext */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+
+      /* cyrillic */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+
+      /* greek-ext */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+1F00-1FFF;
+      }
+
+      /* greek */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0370-03FF;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* cyrillic-ext */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+
+      /* cyrillic */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+
+      /* greek-ext */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+1F00-1FFF;
+      }
+
+      /* greek */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0370-03FF;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* cyrillic-ext */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+
+      /* cyrillic */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+
+      /* greek-ext */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+1F00-1FFF;
+      }
+
+      /* greek */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0370-03FF;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+    </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Y3FM96129M"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-Y3FM96129M");
+    </script>
+
+    <title>Omobolarinwa Quadri: Front End Developer</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="fixed-header animate-background">
+        <div class="container header-container">
+          <div class="logo-container">
+            <span class="logo animate-logo">Omobolarinwa Quadri</span>
+          </div>
+          <div class="header-text">
+            <h1>
+              <p class="animate-text-1">Self-taught Front End Developer,</p>
+              <p class="animate-text-2">School-taught Computer Scientist</p>
+            </h1>
+          </div>
+          <h2 class="animate-subtitle">
+            I build websites with a focus on responsive design and
+            accessibility.
+          </h2>
+          <div class="scroll-button animate-scroll" tabindex="0">
+            <div class="arrow">↓</div>
+            scroll
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <div class="container">
+        <a href="/" class="nav-logo" title="Back to Homepage">
+          Omobolarinwa Quadri
+        </a>
+        <div class="nav-links">
+          <a href="about" class="link">about</a>
+          <a href="projects" class="link">projects</a>
+          <a href="articles" class="link">articles</a>
+          <div class="social-media">
+            <a href="https://github.com/quadribola91" title="Github">
+              <i class="demo-icon icon-github-circled"></i>
+            </a>
+            <a href="https://www.instagram.com/omobolarinwa19" title="Twitter">
+              <i class="demo-icon icon-twitter"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/omobolarinwa-quadri-a207b3216/"
+              title="LinkedIn"
+            >
+              <i class="demo-icon icon-linkedin"></i>
+            </a>
+          </div>
+        </div>
+        <div class="nav-controls">
+          <button
+            id="menu-display"
+            title="Show Menu"
+            class="hamburger"
+          ></button>
+          <button
+            id="theme-display"
+            title="Select a color scheme"
+            class="control"
+          >
+            <i class="demo-icon icon-cog"></i>
+          </button>
+        </div>
+        <div class="theme-container">
+          <button
+            class="light theme-select"
+            id="light-select"
+            onclick="setTheme('light')"
+            aria-label="Set light theme"
+          >
+            <div class="theme-label">Light</div>
+            <div class="theme">
+              <div class="color background"></div>
+              <div class="color shade-100"></div>
+              <div class="color shade-300"></div>
+              <div class="color shade-500"></div>
+              <div class="color text"></div>
+            </div>
+          </button>
+          <button
+            class="dark theme-select"
+            id="dark-select"
+            onclick="setTheme('dark')"
+            onkeydown="(e) => setThemeKey(e, 'dark')"
+            aria-label="Set dark theme"
+          >
+            <div class="theme-label">Dark</div>
+            <div class="theme">
+              <div class="color background"></div>
+              <div class="color shade-100"></div>
+              <div class="color shade-300"></div>
+              <div class="color shade-500"></div>
+              <div class="color text"></div>
+            </div>
+          </button>
+          <button
+            class="brown theme-select"
+            id="brown-select"
+            onclick="setTheme('brown')"
+            aria-label="Set brown theme"
+          >
+            <div class="theme-label">Brown</div>
+            <div class="theme">
+              <div class="color background"></div>
+              <div class="color shade-100"></div>
+              <div class="color shade-300"></div>
+              <div class="color shade-500"></div>
+              <div class="color text"></div>
+            </div>
+          </button>
+          <button
+            class="green theme-select"
+            id="green-select"
+            onclick="setTheme('green')"
+            aria-label="Set green theme"
+          >
+            <div class="theme-label">Green</div>
+            <div class="theme">
+              <div class="color background"></div>
+              <div class="color shade-100"></div>
+              <div class="color shade-300"></div>
+              <div class="color shade-500"></div>
+              <div class="color text"></div>
+            </div>
+          </button>
+          <button
+            class="pink theme-select"
+            id="pink-select"
+            onclick="setTheme('pink')"
+            aria-label="Set pink theme"
+          >
+            <div class="theme-label">Pink</div>
+            <div class="theme">
+              <div class="color background"></div>
+              <div class="color shade-100"></div>
+              <div class="color shade-300"></div>
+              <div class="color shade-500"></div>
+              <div class="color text"></div>
+            </div>
+          </button>
+          <button
+            class="neon theme-select"
+            id="neon-select"
+            onclick="setTheme('neon')"
+            aria-label="Set pink theme"
+          >
+            <div class="theme-label">Neon</div>
+            <div class="theme">
+              <div class="color background"></div>
+              <div class="color shade-100"></div>
+              <div class="color shade-300"></div>
+              <div class="color shade-500"></div>
+              <div class="color text"></div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section id="about">
+        <div class="container inner-container">
+          <div class="intro scroll-in">
+            <h2 class="section-title">
+              Hello, I'm Omobolarinwa Quadri
+              <span class="title-icon">&#128578;</span>
+            </h2>
+            <div class="section-subtitle">
+              <p>
+                I'm a self-taught Front End Developer and school-taught Computer
+                Scientist from Nigeria.
+              </p>
+              <p>
+                I've been
+                <a href="about#history">building websites since 2021</a> with a
+                focus on responsive design, accessibility and pleasing
+                aesthetics.
+              </p>
+            </div>
+            <div class="section-link">
+              <a href="about" class="link-btn">More About Me</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="wave-border top">
+        <svg
+          viewBox="0 0 500 150"
+          preserveAspectRatio="none"
+          style="height: 100%; width: 100%"
+        >
+          <path
+            d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+            style="stroke: none; fill: var(--shade-100)"
+          ></path>
+          <path
+            class="neon-path"
+            d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98"
+            style="stroke: var(--neon-color); fill: none"
+          ></path>
+        </svg>
+      </div>
+      <section id="projects">
+        <div class="container">
+          <div class="title-container scroll-in">
+            <h2 class="section-title">
+              Featured Projects <span class="title-icon">&#128187;</span>
+            </h2>
+            <p class="section-subtitle">
+              I do most of my work under contract but I tend to freelance from
+              time to time or build projects for fun. Here are some of my most
+              recent commercial projects:
+            </p>
+          </div>
+          <div class="project-container">
+            <div class="project scroll-in">
+              <div class="project-image">
+                <img
+                  src="./static/images/projects/trainella.png"
+                  width="720"
+                  height="340"
+                  alt="HighWeather"
+                />
+              </div>
+              <div class="project-content-container">
+                <div class="project-content">
+                  <h3 class="project-title">
+                    <a
+                      href="https://highweather.vercel.app
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      HighWeather
+                    </a>
+                  </h3>
+                  <div class="project-description">
+                    <p>
+                      This is a Project free for everyone. It enables user to
+                      check about the current weather condition and also can
+                      check more weather stories and updates. As well as live
+                      weather updates included
+                    </p>
+                  </div>
+                  <ul class="project-tags" title="Technologies used">
+                    <li class="tag">HTML</li>
+                    <li class="tag">CSS</li>
+                    <li class="tag">JAVASCRIPT</li>
+                  </ul>
+                  <div class="project-links">
+                    <a
+                      href="https://highweather.vercel.app"
+                      target="_blank"
+                      rel="noopener"
+                      class="link-btn"
+                      >visit site</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project scroll-in">
+              <div class="project-image">
+                <img
+                  src="./static/images/projects/cybercamp.png"
+                  width="720"
+                  height="340"
+                  alt="HighReceipes"
+                />
+              </div>
+              <div class="project-content-container">
+                <div class="project-content">
+                  <h3 class="project-title">
+                    <a
+                      href="http://highfoods.vercel.app"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      HIGHFOODS
+                    </a>
+                  </h3>
+                  <div class="project-description">
+                    <p>
+                      This is a complete receipe site. Free for everyone and it enables user to check for the 
+                      best of cravings and how to make the best of the best 
+                    </p>
+                    
+                  </div>
+                  <ul class="project-tags">
+                    <li class="tag">HTML</li>
+                    <li class="tag">CSS</li>
+                    <li class="tag">JavaScript</li>
+                    <li class="tag">React</li>
+                  </ul>
+                  <div class="project-links">
+                    <a
+                      href="http://highfoods.vercelp.app"
+                      target="_blank"
+                      rel="noopener"
+                      class="link-btn"
+                      >Visit Site</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project scroll-in">
+              <div class="project-image">
+                <img
+                  src="./static/images/projects/portfolio.png"
+                  width="720"
+                  height="340"
+                  alt="Jemima Abu: Self Taught Developer, School Taught Engineer"
+                />
+              </div>
+              <div class="project-content-container">
+                <div class="project-content">
+                  <h3 class="project-title">My Portfolio</h3>
+                  <div class="project-description">
+                    <p>
+                      This is the Second version of my portfolio website. With
+                      this version, I wanted to keep the code as basic as
+                      possible but still make the site interactive so all the
+                      animations and transitions on the page are done with
+                      JavaScript and CSS.
+                    </p>
+                  </div>
+                  <ul class="project-tags">
+                    <li class="tag">HTML</li>
+                    <li class="tag">CSS</li>
+                    <li class="tag">JavaScript</li>
+                    <li class="tag">React</li>
+                  </ul>
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/quadribola91"
+                      target="_blank"
+                      rel="noopener"
+                      class="link-btn"
+                      >View Source Code</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section-link scroll-in">
+            <a href="projects" class="link-btn">View All Projects</a>
+          </div>
+        </div>
+      </section>
+      <div class="wave-border bottom">
+        <svg
+          viewBox="0 0 500 150"
+          preserveAspectRatio="none"
+          style="height: 100%; width: 100%"
+        >
+          <path
+            d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
+            style="stroke: none; fill: var(--shade-100)"
+          ></path>
+          <path
+            class="neon-path"
+            d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98"
+            style="stroke: var(--neon-color); fill: none"
+          ></path>
+        </svg>
+      </div>
+      <!----------------------------------------------------------------------------->
+      <section id="talks">
+        <div class="container">
+          <div class="title-container scroll-in"></div>
+          <div class="talks-container"></div>
+          <div class="section-link scroll-in">
+            <!-----------------------<a href="talks" class="link-btn">View All Talks</a>---------->
+          </div>
+        </div>
+      </section>
+      <div class="wave-border top">
+        <svg
+          viewBox="0 0 500 150"
+          preserveAspectRatio="none"
+          style="height: 100%; width: 100%"
+        >
+          <path
+            d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+            style="stroke: none; fill: var(--shade-100)"
+          ></path>
+          <path
+            class="neon-path"
+            d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98"
+            style="stroke: var(--neon-color); fill: none"
+          ></path>
+        </svg>
+      </div>
+      <section id="articles">
+        <div class="container">
+          <div class="title-container scroll-in">
+            <h2 class="section-title">
+              Featured Articles <span class="title-icon">&#128466;</span>
+            </h2>
+            <p class="section-subtitle">
+              I write the type of articles I would want to read when trying to
+              understand a new concept or develop a skill. Here are some things
+              I've written recently:
+            </p>
+          </div>
+          <div class="articles-container">
+            <div class="article scroll-in">
+              <div class="article-image">
+                <a
+                  href="https://dev.to/jemimaabu/how-to-learn-javascript-4g9a"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img
+                    src="./static/images/articles/learn-javascript.png"
+                    alt="How To Learn JavaScript"
+                  />
+                </a>
+              </div>
+              <div class="article-content">
+                <div class="article-site">
+                  <a
+                    href="https://dev.to/jemimaabu/how-to-learn-javascript-4g9a"
+                    target="_blank"
+                    rel="noopener"
+                    >DEV.TO</a
+                  >
+                </div>
+                <h3 class="article-title">
+                  <a
+                    href="https://dev.to/jemimaabu/how-to-learn-javascript-4g9a"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    How To Learn JavaScript
+                  </a>
+                </h3>
+                <div class="article-description">
+                  <p>
+                    In this article, we'll discover what JavaScript is, what
+                    it's used for, and recommend some courses to help you start
+                    your JS learning journey.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="article scroll-in">
+              <div class="article-image">
+                <a
+                  href="https://www.freecodecamp.org/news/beginners-guide-to-creating-a-portfolio-website/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img
+                    src="./static/images/articles/portfolio-guide.png"
+                    alt="A Beginner's Guide To Creating A Portfolio Website"
+                  />
+                </a>
+              </div>
+              <div class="article-content">
+                <div class="article-site">
+                  <a
+                    href="https://www.freecodecamp.org/news/beginners-guide-to-creating-a-portfolio-website/"
+                    target="_blank"
+                    rel="noopener"
+                    >freecodecamp</a
+                  >
+                </div>
+                <h3 class="article-title">
+                  <a
+                    href="https://www.freecodecamp.org/news/beginners-guide-to-creating-a-portfolio-website/"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    I Helped 2 Developers Set Up Their Portfolio Website. Here's
+                    What I Learned.
+                  </a>
+                </h3>
+                <div class="article-description">
+                  <p>
+                    In this article, we'll cover everything you need to know
+                    about setting up your portfolio site - from choosing a
+                    domain name to deploying the site online.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="article scroll-in">
+              <div class="article-image">
+                <a
+                  href="https://webdesign.tutsplus.com/tutorials/animate-on-scroll-with-javascript--cms-36671"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img
+                    src="./static/images/articles/js-scroll.png"
+                    alt="Handling Scroll Based Animation With Vanilla JavaScript"
+                  />
+                </a>
+              </div>
+              <div class="article-content">
+                <div class="article-site">
+                  <a
+                    href="https://webdesign.tutsplus.com/tutorials/animate-on-scroll-with-javascript--cms-36671"
+                    target="_blank"
+                    rel="noopener"
+                    >envatotuts+</a
+                  >
+                </div>
+                <h3 class="article-title">
+                  <a
+                    href="https://webdesign.tutsplus.com/tutorials/animate-on-scroll-with-javascript--cms-36671"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Handling Scroll Based Animation With Vanilla JavaScript
+                  </a>
+                </h3>
+                <div class="article-description">
+                  <p>
+                    In this article, we'll explore how to implement a
+                    scroll-based styling on a page using native methods in
+                    vanilla JavaScript and CSS and how to optimize these methods
+                    for accessibility and performance.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section-link scroll-in">
+            <a href="articles" class="link-btn">View All Articles</a>
+          </div>
+        </div>
+      </section>
+      <div class="wave-border bottom">
+        <svg
+          viewBox="0 0 500 150"
+          preserveAspectRatio="none"
+          style="height: 100%; width: 100%"
+        >
+          <path
+            d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
+            style="stroke: none; fill: var(--shade-100)"
+          ></path>
+          <path
+            class="neon-path"
+            d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98"
+            style="stroke: var(--neon-color); fill: none"
+          ></path>
+        </svg>
+      </div>
+    </main>
+    <footer class="index-footer">
+      <div class="container">
+        <div class="social-media">
+          <a href="https://github.com/quadribola91" title="Github">
+            <i class="demo-icon icon-github-circled"></i>
+          </a>
+          <a href="https://www.instagram.com/omobolarinwa19" title="Twitter">
+            <i class="demo-icon icon-twitter"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/omobolarinwa-quadri-a207b3216/"
+            title="LinkedIn"
+          >
+            <i class="demo-icon icon-linkedin"></i>
+          </a>
+        </div>
+        <div class="copyright">
+          &copy; designed & built by
+          <a href="https://www.omobolarinwa19.vercel.app"
+            >Omobolarinwa Quadri</a
+          >
+          <span class="heart">&hearts;</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="./static/js/index.js"></script>
+  <script src="./static/js/landing-page.js"></script>
+</html>

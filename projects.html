@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1a324c" />
+    <meta name="msapplication-navbutton-color" content="#1a324c" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta
+      name="description"
+      content="All the webpages, websites and applications I've created."
+    />
+    <link rel="stylesheet" href="static/css/main.css" />
+    <link rel="stylesheet" href="static/css/page.css" />
+    <link rel="stylesheet" href="static/css/projects.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="static/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="static/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="static/images/favicon/favicon-16x16.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Y3FM96129M"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-Y3FM96129M");
+    </script>
+
+    <title>Omobolarinwa Quadri: Projects</title>
+  </head>
+
+  <body>
+    <nav class="visible">
+      <div class="container">
+        <a href="/" class="nav-logo" title="Back to Homepage">
+          Omobolarinwa Quadri
+        </a>
+        <div class="nav-links">
+          <a href="about" class="link">about</a>
+          <a href="projects" class="link active">projects</a>
+          <a href="articles" class="link">articles</a>
+          <div class="social-media">
+            <a href="https://www.github.com/quadribola91" title="Github">
+              <i class="demo-icon icon-github-circled"></i>
+            </a>
+            <a href="https://www.twitter.com/newabdul91" title="Twitter">
+              <i class="demo-icon icon-twitter"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/omobolarinwa-quadri-a207b3216/"
+              title="LinkedIn"
+            >
+              <i class="demo-icon icon-linkedin"></i>
+            </a>
+          </div>
+        </div>
+        <div class="nav-controls">
+          <button
+            id="menu-display"
+            title="Show Menu"
+            class="hamburger"
+          ></button>
+          <button id="theme-display" class="control">
+            <i class="demo-icon icon-cog" title="Theme Select"></i>
+          </button>
+        </div>
+        <div class="theme-container">
+          <button
+            class="light theme-select"
+            id="light-select"
+            onclick="setTheme('light')"
+            aria-label="Set light theme"
+          >
+            <div class="theme-label">Light</div>
+            <div class="theme">
+              <div class="color background"></div>
+              <div class="color shade-100"></div>
+              <div class="color shade-300"></div>
+              <div class="color shade-500"></div>
+              <div class="color text"></div>
+            </div>
+          </button>
+          <button
+            class="dark theme-select"
+            id="dark-select"
+            onclick="setTheme('dark')"
+            onkeydown="(e) => setThemeKey(e, 'dark')"
+            aria-label="Set dark theme"
+          >
+            <div class="theme-label">Dark</div>
+            <div class="theme">
+              <div class="color background"></div>
+              <div class="color shade-100"></div>
+              <div class="color shade-300"></div>
+              <div class="color shade-500"></div>
+              <div class="color text"></div>
+            </div>
+          </button>
+          <button
+            class="brown theme-select"
+            id="brown-select"
+            onclick="setTheme('brown')"
+            aria-label="Set brown theme"
+          >
+            <div class="theme-label">Brown</div>
+            <div class="theme">
+              <div class="color background"></div>
+              <div class="color shade-100"></div>
+              <div class="color shade-300"></div>
+              <div class="color shade-500"></div>
+              <div class="color text"></div>
+            </div>
+          </button>
+          <button
+            class="green theme-select"
+            id="green-select"
+            onclick="setTheme('green')"
+            aria-label="Set green theme"
+          >
+            <div class="theme-label">Green</div>
+            <div class="theme">
+              <div class="color background"></div>
+              <div class="color shade-100"></div>
+              <div class="color shade-300"></div>
+              <div class="color shade-500"></div>
+              <div class="color text"></div>
+            </div>
+          </button>
+          <button
+            class="pink theme-select"
+            id="pink-select"
+            onclick="setTheme('pink')"
+            aria-label="Set pink theme"
+          >
+            <div class="theme-label">Pink</div>
+            <div class="theme">
+              <div class="color background"></div>
+              <div class="color shade-100"></div>
+              <div class="color shade-300"></div>
+              <div class="color shade-500"></div>
+              <div class="color text"></div>
+            </div>
+          </button>
+          <button
+            class="neon theme-select"
+            id="neon-select"
+            onclick="setTheme('neon')"
+            aria-label="Set pink theme"
+          >
+            <div class="theme-label">Neon</div>
+            <div class="theme">
+              <div class="color background"></div>
+              <div class="color shade-100"></div>
+              <div class="color shade-300"></div>
+              <div class="color shade-500"></div>
+              <div class="color text"></div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="container">
+        <h1 class="section-title">
+          Projects <span class="title-icon">&#128187;</span>
+        </h1>
+        <p class="section-subtitle">
+          Over the course of my career as a front-end developer, I've built
+          websites and applications. These are most of them:
+        </p>
+      </section>
+      <section id="websites" class="container">
+        <h2 class="subsection-title">Webpages (3)</h2>
+        <div class="main-text project-scroll">
+          <div class="project">
+            <div class="project-image">
+              <img
+                src="./static/images/projects/numblr.png"
+                width="720"
+                height="340"
+                alt="Tumblr Clone Website"
+              />
+            </div>
+            <div class="project-text">
+              <h3 class="project-title">High Weather</h3>
+              <p>
+                Weather App
+                <a
+                  href="https://highweather.vercel.app"
+                  target="_blank"
+                  rel="noopener"
+                ></a>
+              </p>
+              <ul class="project-tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVASCRIPT</li>
+              </ul>
+
+              <div class="project-links">
+                <a
+                  href="https://highweather.vercel.app"
+                  target="_blank"
+                  rel="noopener"
+                  >visit site</a
+                >
+                <a
+                  href="https://github.com/quadribola91/"
+                  target="_blank"
+                  rel="noopener"
+                  >source code</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-image">
+              <img
+                src="./static/images/projects/trainella.png"
+                width="720"
+                height="340"
+                alt="Receipe Website"
+              />
+            </div>
+            <div class="project-text">
+              <h3 class="project-title">High Receipes</h3>
+              <p>A Reciepe Finder</p>
+              <ul class="project-tags">
+                <li>React</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVASCRIPT</li>
+              </ul>
+              <div class="project-links">
+                <a
+                  href="https://highfoods.vercel.app"
+                  target="_blank"
+                  rel="noopener"
+                  >visit site</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-image">
+              <img
+                src="./static/images/projects/cybercamp.png"
+                width="720"
+                height="340"
+                alt="Cybercamp Website"
+              />
+            </div>
+            <div class="project-text">
+              <h3 class="project-title">High-Todo</h3>
+              <p>A Todo App that takes daily list</p>
+              <ul class="project-tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="project-links">
+                <a
+                  href="https://unilagconsult.com.ng/cybercamp/"
+                  target="_blank"
+                  rel="noopener"
+                  >visit site</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="portfolios" class="container">
+        <h2 class="subsection-title">Previous Portfolios (1)</h2>
+        <div class="main-text project-scroll">
+          <div class="project">
+            <div class="project-image">
+              <img
+                src="./static/images/projects/portfolio-v1.png"
+                width="720"
+                height="340"
+                alt="First version of my portfolio"
+              />
+            </div>
+            <div class="project-text">
+              <h3 class="project-title">Portfolio V.1</h3>
+              <ul class="project-tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="project-links">
+                <a
+                  href="https://jemimaabu.github.io"
+                  target="_blank"
+                  rel="noopener"
+                  >visit site</a
+                >
+                <a
+                  href="https://github.com/jemimaabu/jemimaabu.github.io"
+                  target="_blank"
+                  rel="noopener"
+                  >source code</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="page-nav container">
+      <a href="about">&#8592; About</a>
+      <a href="articles">Articles &#8594;</a>
+    </div>
+    <div class="wave-border top">
+      <svg
+        viewBox="0 0 500 150"
+        preserveAspectRatio="none"
+        style="height: 100%; width: 100%"
+      >
+        <path
+          d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+          style="stroke: none; fill: var(--shade-100)"
+        ></path>
+        <path
+          class="neon-path"
+          d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98"
+          style="stroke: var(--neon-color); fill: none"
+        ></path>
+      </svg>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="social-media">
+          <a href="https://www.github.com/quadribola91" title="Github">
+            <i class="demo-icon icon-github-circled"></i>
+          </a>
+          <a href="https://www.twitter.com/newabdul91" title="Twitter">
+            <i class="demo-icon icon-twitter"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/omobolarinwa-quadri-a207b3216/"
+            title="LinkedIn"
+          >
+            <i class="demo-icon icon-linkedin"></i>
+          </a>
+        </div>
+        <div class="copyright">
+          &copy; designed & built by
+          <a href="https://www.omobolarinwa19.vercel.app"
+            >Omobolarinwa Quadri</a
+          >
+          <span class="heart">&hearts;</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="./static/js/index.js"></script>
+</html>
